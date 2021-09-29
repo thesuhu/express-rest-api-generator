@@ -1,7 +1,7 @@
 {
   "name": "@thesuhu/express-rest-api-generator",
   "description": "Express rest API generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "thesuhu <thesuhu@protonmail.com>",
   "keywords": [
     "express",
