@@ -1,6 +1,6 @@
 # express-rest-api-generator
 
-[![npm](https://img.shields.io/npm/v/express-rest-api-generator.svg?style=flat-square)](https://www.npmjs.com/package/express-rest-api-generator)
+[![npm](https://img.shields.io/npm/v/@thesuhu/express-rest-api-generator.svg?style=flat-square)](https://www.npmjs.com/package/express-rest-api-generator)
 [![Build Status](https://img.shields.io/travis/thesuhu/express-rest-api-generator.svg?branch=main&style=flat-square)](https://app.travis-ci.com/thesuhu/express-rest-api-generator)
 [![license](https://img.shields.io/github/license/thesuhu/express-rest-api-generator?style=flat-square)](https://github.com/thesuhu/express-rest-api-generator/blob/master/LICENSE)
 
