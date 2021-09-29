@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/thesuhu/express-rest-api-generator/issues"
   },
-  "homepage": "https://github.com/thesuhu/writelog#readme",
+  "homepage": "https://github.com/thesuhu/express-rest-api-generator#readme",
   "license": "MIT",
   "dependencies": {
     "app-root-path": "^3.0.0",
