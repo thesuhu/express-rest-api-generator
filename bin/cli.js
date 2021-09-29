@@ -4,12 +4,12 @@ var program = require('commander')
 var readline = require('readline')
 var fs = require('fs')
 var mkdirp = require('mkdirp')
-var basedir = require('app-root-path')
 var path = require('path')
 
 var MODE_0666 = parseInt('0666', 8)
 var MODE_0755 = parseInt('0755', 8)
 var VERSION = require('../package').version
+var TEMPLATE_DIR = path.join(__dirname, '..', 'templates')
 
 var _exit = process.exit
 
@@ -85,7 +85,7 @@ function confirm(msg, callback) {
 
 // Copy file from templates directory
 function copyTemplate(from, to) {
-    write(to, fs.readFileSync(path.join(basedir + '/templates', from), 'utf-8'))
+    write(to, fs.readFileSync(path.join(TEMPLATE_DIR, from), 'utf-8'))
 }
 
 // Create application at the given directory.
@@ -153,7 +153,7 @@ function createApplication(name, dir) {
 
     // copy www
     mkdir(dir, 'bin')
-    var www = fs.readFileSync(basedir + '/templates/www', 'utf-8').replace(/name/g, name)
+    var www = fs.readFileSync(path.join(TEMPLATE_DIR, 'www'), 'utf-8').replace(/name/g, name)
     write(path.join(dir, 'bin/www'), www)
 
     // copy routes
