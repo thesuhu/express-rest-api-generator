@@ -1,0 +1,33 @@
+{
+  "name": "express-rest-api-generator",
+  "description": "Express rest API generator",
+  "version": "1.0.0",
+  "author": "thesuhu <thesuhu@protonmail.com>",
+  "keywords": [
+    "express",
+    "generator",
+    "rest",
+    "restful",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thesuhu/express-rest-api-generator"
+  },
+  "bugs": {
+    "url": "https://github.com/thesuhu/express-rest-api-generator/issues"
+  },
+  "homepage": "https://github.com/thesuhu/writelog#readme",
+  "license": "MIT",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "commander": "^8.2.0",
+    "mkdirp": "^1.0.4",
+    "sorted-object": "^2.0.1"
+  },
+  "main": "bin/cli.js",
+  "bin": {
+    "restapi": "./bin/cli.js"
+  },
+  "preferGlobal": true
+}
