@@ -9,7 +9,7 @@ The easy way to generate rest API with express.
 ## Install
 
 ```sh
-npm install -g express-rest-api-generator
+npm install -g @thesuhu/express-rest-api-generator
 ```
 
 ## Quick Start
