@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+// credits: 
+// some of code below is copied from original source here https://github.com/expressjs/generator/blob/master/bin/express-cli.js
+
 var program = require('commander')
 var readline = require('readline')
 var fs = require('fs')
