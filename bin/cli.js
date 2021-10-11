@@ -118,27 +118,27 @@ function createApplication(name, dir) {
     write(path.join(dir, 'package.json'), JSON.stringify(pkg, null, 2) + '\n')
 
     // dotenv
-    var env = `
-    #app
+    var env = 
+    `# app
     NODE_ENV=dev
     DEBUG=${name}:*
     PORT=3000
     
-    #jwt
+    # jwt
     SALT=dGhlc3VodSBpcyBiYWNrIQ==
     ALG_JWT=HS256
     SIGN_JWT=SHA256
     
-    #morgan
+    # morgan
     INTERVAL=30d
     SIZE=10M
     
-    #parser
+    # parser
     LIMIT_JSON=50mb
     LIMIT_URLENCODE=50mb
     `
     // write .env
-    write(path.join(dir, '.env'), env)
+    write(path.join(dir, '.env'), env.replace(/    /g, ''))
 
     // create directory
     if (dir !== '.') {
@@ -165,13 +165,13 @@ function createApplication(name, dir) {
     copyTemplate('message-code.js', path.join(dir, 'config/message-code.js'))
     copyTemplate('key.js', path.join(dir, 'config/key.js'))
 
-    var gitignore = `
-    node_modules/
+    var gitignore = 
+    `node_modules/
     logs/
     .env
     `
     // write gitignore
-    write(path.join(dir, '.gitignore'), gitignore)
+    write(path.join(dir, '.gitignore'), gitignore.replace(/    /g, ''))
 
     var prompt = launchedFromCmd() ? '>' : '$'
 
